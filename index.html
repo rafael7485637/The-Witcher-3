@@ -16,15 +16,11 @@
     }
     </style>
 </head>
-<body onload="playAudio()">
+<body>
 
   <video autoplay loop muted class="video-inicio">
     <source src="video/mylivewallpapers.com-The-Witcher-3.mp4" type="video/mp4">
   </video>
-
-  <audio id="backgroundAudio" loop>
-    <source src="audio/audio-the-witcher.mp3" type="audio/mpeg">
-  </audio>
 
     <header>
         <nav class="barra-nav navbar navbar-expand-lg bg-body-tertiary">
@@ -87,7 +83,7 @@
       <div class="sinopse">
         <h1>The witcher wild hunt</h1>
         <p class="fs-5">
-          The Witcher 3: Wild Hunt é um jogo de RPG de ação onde o jogador assume o papel de Geralt de Rívia, um caçador de monstros em busca de sua filha adotiva, Ciri, perseguida pela misteriosa Caçada Selvagem. Durante a jornada, Geralt enfrenta criaturas fantásticas, intrigas políticas e decisões morais que influenciam a história. O jogo se destaca por seu mundo aberto, narrativa imersiva e personagens complexos, permitindo ao jogador explorar um universo rico em mitologia e desafios. Com gráficos impressionantes e uma jogabilidade dinâmica, The Witcher 3 é considerado um dos maiores marcos dos jogos de RPG.
+          The Witcher 3 Wild Hunt é um jogo de RPG de ação onde o jogador assume o papel de Geralt de Rívia, um caçador de monstros em busca de sua filha adotiva, Ciri, perseguida pela misteriosa Caçada Selvagem. Durante a jornada, Geralt enfrenta criaturas fantásticas, intrigas políticas e decisões morais que influenciam a história. O jogo se destaca por seu mundo aberto, narrativa imersiva e personagens complexos, permitindo ao jogador explorar um universo rico em mitologia e desafios. Com gráficos impressionantes e uma jogabilidade dinâmica, The Witcher 3 é considerado um dos maiores marcos dos jogos de RPG.
         </p>
       
       </div>
@@ -105,7 +101,7 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Geralt de Rívia, o Bruxo</h5>
+                  <h5 class="card-title">Geralt de Rívia o Bruxo</h5>
                   <p class="card-text">Um caçador de monstros profissional, Geralt navega por um mundo repleto de perigos e intrigas. 
                     Com habilidades sobre-humanas e decisões morais complexas, ele enfrenta desafios que moldam seu destino e o do mundo.</p>
                 </div>
@@ -120,7 +116,7 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Ciri, a Criança da Profecia</h5>
+                  <h5 class="card-title">Ciri a Criança da Profecia</h5>
                   <p class="card-text">Cirilla, filha adotiva de Geralt, possui poderes ancestrais que podem alterar o curso da história. 
                     Sua jornada de autodescoberta e fuga de forças maléficas é central na trama emocionante do jogo.</p>
                 </div>
@@ -216,25 +212,6 @@
     </div>
   </div>
 
-
   </footer>
-
-  <script>
-    function playAudio() {
-      var audio = document.getElementById('backgroundAudio');
-      audio.muted = false;
-      audio.play().catch(function(error) {
-        console.error('Erro ao reproduzir o áudio:', error);
-      });
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-      var audio = document.getElementById('backgroundAudio');
-      audio.muted = false;
-      audio.play().catch(function(error) {
-        console.error('Erro ao reproduzir o áudio:', error);
-      });
-    });
-  </script>
 </body>
 </html>
