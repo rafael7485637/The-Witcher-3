@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'MinhaFonte';  /* Nome que você escolherá para a fonte */
+    src: url('fontes/thewitcher-font/Thewitcher-jnOj.ttf') 
+  }
+
+body {
+  overflow-x: hidden;
+}
+
+.barra-nav{
+  opacity: 0.8;
+  background-color: black;
+}
+
+.navegacao{
+padding-left: 29%;
+}
+
+.imgnav{
+    width: 145px;
+}
+
+.imgslide{
+    height: 600px;
+    object-fit: cover;
+}
+
+.video-inicio{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(40%);
+}
+
+.fundo{
+  background-image:url("img/fundo.png") ;
+  background-position: center;
+  padding-top: 120px;
+  padding-bottom: 470px;
+}
+
+.sinopse{
+  margin-left: 10%;
+  margin-right: 50%;
+  color: lightgray;
+}
+
+.cartao{
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+
+
+.rodapé{
+  padding-top: 100px;
+  background-color: black;
+}
+
+.list{
+  list-style: none;
+  font-size: 20px;
+}
+
+.link{
+  text-decoration: none;
+}
+
+
+.icons{
+color: white;
+list-style: none;
+font-size: 25px;
+}
+
+.text{
+  text-align: center;
+}
+
+.img{
+  margin-right: 60px;
+}
+
+.video-container {
+    background-position: center;
+    height: 100vh; /* Define a altura da div como 100% da altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+video {
+  max-width: 100%; /* Responsivo para não ultrapassar o container */
+}
+
+
+

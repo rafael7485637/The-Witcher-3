@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The witcher wild hunt</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    body {
+      font-family: 'MinhaFonte'; /* Usando a fonte */
+    }
+    </style>
+</head>
+<body onload="playAudio()">
+
+  <video autoplay loop muted class="video-inicio">
+    <source src="video/mylivewallpapers.com-The-Witcher-3.mp4" type="video/mp4">
+  </video>
+
+  <audio id="backgroundAudio" loop>
+    <source src="audio/audio-the-witcher.mp3" type="audio/mpeg">
+  </audio>
+
+    <header>
+        <nav class="barra-nav navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                  <img class="imgnav ms-3" src="img/thewitcher.png" alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="navegacao collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" href="#carouselExample">carousel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" href="#fundo">Sinopse</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" href="#card">Card</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" href="#video">Video</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/img1.jpg" class="d-block w-100 imgslide" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img2.jpg" class="d-block w-100 imgslide" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img3.jpg" class="d-block w-100 imgslide" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img4.png" class="d-block w-100 imgslide" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+
+    <section id="fundo" class="fundo">
+
+      <div class="sinopse">
+        <h1>The witcher wild hunt</h1>
+        <p class="fs-5">
+          The Witcher 3: Wild Hunt é um jogo de RPG de ação onde o jogador assume o papel de Geralt de Rívia, um caçador de monstros em busca de sua filha adotiva, Ciri, perseguida pela misteriosa Caçada Selvagem. Durante a jornada, Geralt enfrenta criaturas fantásticas, intrigas políticas e decisões morais que influenciam a história. O jogo se destaca por seu mundo aberto, narrativa imersiva e personagens complexos, permitindo ao jogador explorar um universo rico em mitologia e desafios. Com gráficos impressionantes e uma jogabilidade dinâmica, The Witcher 3 é considerado um dos maiores marcos dos jogos de RPG.
+        </p>
+      
+      </div>
+    </section>
+
+
+    <section id="card" class="cartao pb-5">
+      <div class="cd ms-4 pt-5">
+
+        <div class="row justify-content-center">
+          <div class="card me-5 mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/card-1.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Geralt de Rívia, o Bruxo</h5>
+                  <p class="card-text">Um caçador de monstros profissional, Geralt navega por um mundo repleto de perigos e intrigas. 
+                    Com habilidades sobre-humanas e decisões morais complexas, ele enfrenta desafios que moldam seu destino e o do mundo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/card-2.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Ciri, a Criança da Profecia</h5>
+                  <p class="card-text">Cirilla, filha adotiva de Geralt, possui poderes ancestrais que podem alterar o curso da história. 
+                    Sua jornada de autodescoberta e fuga de forças maléficas é central na trama emocionante do jogo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row justify-content-center">
+          <div class="card me-5" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/card-3.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Mundo Aberto e Imersivo</h5>
+                  <p class="card-text">The Witcher 3 apresenta um vasto mundo aberto, rico em detalhes e vida. De florestas assombradas a cidades 
+                    vibrantes, cada local oferece histórias únicas e aventuras aguardando para serem exploradas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/card-4.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Caçadas Épicas de Monstros</h5>
+                  <p class="card-text">Assuma contratos para eliminar criaturas temíveis. Estude as fraquezas dos monstros, 
+                    prepare poções e use suas habilidades de bruxo para enfrentar seres lendários em batalhas desafiadoras.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </section>
+
+    <section id="video" class="video-container">
+        <video width="960" height="540" controls>
+          <source src="video/The Witcher 3 Wild Hunt Game of the Year Trailer de Lançamento em Português BR.mp4" type="video/mp4">
+        </video>
+    </section>
+
+
+  </main>
+
+  <footer class="rodapé text-light">
+    <div>
+      <ul class="list   d-flex justify-content-center">
+        <li>
+          <a class="link me-4 text-light" href="https://support.cdprojektred.com/en/" target="_blank">Suporte</a>
+        </li>
+        <li>
+          <a class="link me-4 text-light" href="https://regulations.cdprojektred.com/en/user_agreement" target="_blank">Contrato de usuario</a>
+        </li>
+        <li>
+          <a class="link me-4 text-light" href="https://www.cdprojektred.com/en/jobs" target="_blank">Carreiras</a>
+        </li>
+        <li>
+          <a class="link me-4 text-light" href="https://www.cdprojektred.com/pt-br/fan-content" target="_blank">Diretrizes de conteúdos de fãs</a>
+        </li>
+        <li>
+          <a class="link me-4 text-light" href="https://press.cdprojektred.com/pt-br" target="_blank">Centro de imprensa</a>
+        </li>
+        <li>
+          <a class="link me-4 text-light" href="https://gear.cdprojektred.com/?utm_source=thewitcher&utm_medium=footer&utm_campaign=brand" target="_blank">Loja</a>
+        </li>
+      </ul>
+   
+
+    
+
+      <ul class="icons d-flex justify-content-center mt-4">
+        <li><a class="icons" href="https://x.com/witchergame" target="_blank"><i class="mx-3 bi bi-twitter-x"></i></a></li>
+      
+        <li><a class="icons" href="https://www.facebook.com/BRthewitcher" target="_blank"><i class="mx-3 bi bi-facebook"></i></a></li>
+      
+        <li><a class="icons" href="https://www.youtube.com/thewitcher" target="_blank"><i class="mx-3 bi bi-youtube"></i></a></li>
+    
+      <li><a class="icons" href="https://discord.com/invite/thewitcher" target="_blank"><i class="mx-3 bi bi-discord"></i></a></li>
+    </ul>
+
+    <p class="text d-flex justify-content-center">CD PROJEKT®, The Witcher® are registered trademarks of CD PROJEKT Capital Group. The Witcher game © CD <br> PROJEKT S.A. Developed by CD PROJEKT S.A. All rights reserved. The Witcher game is set in the universe <br> created by Andrzej Sapkowski in his series of books. All other copyrights and trademarks are the property of <br> their respective owners.</p>
+    
+    <div class="py-3 d-flex justify-content-center">
+      <a class="img" href="https://www.cdprojekt.com/pl/"  target="_blank"><img src="img/CDPR-572e1eff..png" alt=""></a>
+      <a href="https://pegi.info/"  target="_blank"><img src="img/Ratings-02921adb..png" alt=""></a>
+    </div>
+  </div>
+
+
+  </footer>
+
+  <script>
+    function playAudio() {
+      var audio = document.getElementById('backgroundAudio');
+      audio.muted = false;
+      audio.play().catch(function(error) {
+        console.error('Erro ao reproduzir o áudio:', error);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var audio = document.getElementById('backgroundAudio');
+      audio.muted = false;
+      audio.play().catch(function(error) {
+        console.error('Erro ao reproduzir o áudio:', error);
+      });
+    });
+  </script>
+</body>
+</html>
